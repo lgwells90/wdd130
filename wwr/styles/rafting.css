@@ -1,0 +1,47 @@
+:root {
+    --primary-color: #4B4BC6;
+    --secondary-color: #119DA4;
+    --accent1-color: #FF9249;
+    --accent2-color: #FCCA46;
+}
+body {
+	margin: 4rem;
+}
+
+* h2 {
+    font-family: "Permanent Marker", system-ui;
+    color: var(--primary-color);
+    
+}
+* p {
+    font-family: "Karla", sans-serif;
+}
+.hero {
+    position: relative;
+    width: 100%;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hero h1 {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    font-family: "Permanent Marker", system-ui;
+    color: var(--accent1-color);
+    font-size: 3rem;
+}
+.hero article {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+.hero article img {
+    width: 200px;
+    height: auto;
+    border: 1px solid var(--accent2-color);
+    float: right;
+}
