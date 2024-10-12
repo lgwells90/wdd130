@@ -1,17 +1,39 @@
 :root {
-    --primary-color: #4B4BC6;
+    --primary-color: #1c51c4;
     --secondary-color: #119DA4;
-    --accent1-color: #FF9249;
+    --accent1-color: #57000e;
     --accent2-color: #FCCA46;
 }
 body {
-	margin: 4rem;
+	margin: 2rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: var(--accent2-color);
+}
+
+header img {
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+* a {
+    text-decoration: none;
+    color: var(--accent1-color);
 }
 
 * h2 {
     font-family: "Permanent Marker", system-ui;
     color: var(--primary-color);
-    
+    display: flex;
+    justify-content: center;
 }
 * p {
     font-family: "Karla", sans-serif;
@@ -21,7 +43,6 @@ body {
     width: 100%;
 }
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
 }
@@ -30,18 +51,59 @@ body {
     top: 0%;
     left: 10%;
     font-family: "Permanent Marker", system-ui;
-    color: var(--accent1-color);
+    color: var(--secondary-color);
     font-size: 3rem;
 }
 .hero article {
     position: absolute;
-    top: 65%;
-    width: 100%;
-    background-color: var(--secondary-color);
+    bottom: 0%;
+    right: 0%;
+    width: 30%;
+    background-color: var(--accent2-color);
+    border: 1px solid var(--accent1-color);
+    padding: 1px;
 }
 .hero article img {
     width: 200px;
     height: auto;
-    border: 1px solid var(--accent2-color);
+    border: 1px solid var(--accent1-color);
     float: right;
+}
+
+.history {
+    background-color: var(--accent2-color);
+}
+.adventure {
+    background-color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 20% 80%;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.adventure h2 {
+    grid-column: 1 / 6;
+    grid-row: 1;
+}
+
+.adventure img {
+    width: 185px;
+    max-height: auto;
+    grid-row: 2;
+    grid-column: 1 / 6;   
+    
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sociallinks img {
+    width: 25px;
+    height: auto;
 }
