@@ -92,7 +92,7 @@ nav {
 
 .adventure img {
     width: 185px;
-    max-height: auto;
+    height: auto;
     grid-row: 2;
     grid-column: 1 / 6;   
     
