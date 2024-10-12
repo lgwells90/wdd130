@@ -12,7 +12,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
 }
 
 header img {
@@ -27,6 +27,8 @@ nav {
 * a {
     text-decoration: none;
     color: var(--accent1-color);
+    font-weight: bold;
+    font-family: "Karla", sans-serif;
 }
 
 * h2 {
@@ -49,10 +51,10 @@ nav {
 .hero h1 {
     position: absolute;
     top: 0%;
-    left: 10%;
+    left: 15%;
     font-family: "Permanent Marker", system-ui;
-    color: var(--secondary-color);
-    font-size: 3rem;
+    color: var(--accent2-color);
+    font-size: 4rem;
 }
 .hero article {
     position: absolute;
@@ -101,6 +103,12 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.footer-info {
+    font-family: "Karla", sans-serif;
+    color: var(--accent1-color);
 }
 
 .sociallinks img {
