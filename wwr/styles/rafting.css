@@ -95,9 +95,13 @@ nav {
     height: auto;
     grid-row: 2;
     grid-column: 1 / 6;   
-    
 }
 
+figcaption {
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    color: var(--accent1-color);
+}
 footer {
     display: flex;
     flex-direction: row;
