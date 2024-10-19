@@ -281,7 +281,22 @@ label {
     color: var(--accent1-color);
 }
 
+input, textarea {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
 button {
     width: 30%;
     background-color: aliceblue;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
 }
